@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Форма ввода</title>
+</head>
+<body>
+    {% include "navbar.html" %}
+    <div class="container">
+        <h2>Введите данные</h2>
+        <form>
+            <!-- Поля формы, необходимые для hh/github, например: -->
+            <div class="form-group">
+                <label for="jobTitle">Название вакансии</label>
+                <input type="text" class="form-control" id="jobTitle" placeholder="Введите название вакансии">
+            </div>
+            <div class="form-group">
+                <label for="location">Локация</label>
+                <input type="text" class="form-control" id="location" placeholder="Введите город">
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
